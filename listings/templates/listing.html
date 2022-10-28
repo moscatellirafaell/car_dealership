@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Here is our list single</h1>
+    <p>Name: {{ listing.name }} | Price: {{ listing.price }}</p>
+    <img src="{{ listing.image.url }}" width="400" height="250"><br>
+    <a href="/delete/{{ listing.id }}">Delete</a><br>
+    <a href="/update/{{ listing.id }}">Update</a>
+</body>
+</html>
